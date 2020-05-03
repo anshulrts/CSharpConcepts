@@ -25,6 +25,10 @@ namespace CSharpConcepts
                         MethodHiding m = new MethodHiding();
                         m.start();
                         break;
+                    case 3:
+                        MethodOverriding m1 = new MethodOverriding();
+                        m1.start();
+                        break;
                     default:
                         break;
                 }
