@@ -12,6 +12,7 @@ namespace CSharpConcepts
                 Console.WriteLine("1. Exit");
                 Console.WriteLine("2. Method Hiding");
                 Console.WriteLine("3. Method Overriding");
+                Console.WriteLine("4. Pass By Reference");
 
                 Console.WriteLine("\nEnter Choice");
                 string x = Console.ReadLine();
@@ -28,6 +29,10 @@ namespace CSharpConcepts
                     case 3:
                         MethodOverriding m1 = new MethodOverriding();
                         m1.start();
+                        break;
+                    case 4:
+                        PassByReference p = new PassByReference();
+                        p.start();
                         break;
                     default:
                         break;
