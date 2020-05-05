@@ -13,6 +13,7 @@ namespace CSharpConcepts
                 Console.WriteLine("2. Method Hiding");
                 Console.WriteLine("3. Method Overriding");
                 Console.WriteLine("4. Pass By Reference");
+                Console.WriteLine("5. Using Hashset");
 
                 Console.WriteLine("\nEnter Choice");
                 string x = Console.ReadLine();
@@ -33,6 +34,10 @@ namespace CSharpConcepts
                     case 4:
                         PassByReference p = new PassByReference();
                         p.start();
+                        break;
+                    case 5:
+                        UsingHashSet u = new UsingHashSet();
+                        u.start();
                         break;
                     default:
                         break;
