@@ -15,6 +15,7 @@ namespace CSharpConcepts
                 Console.WriteLine("4. Pass By Reference");
                 Console.WriteLine("5. Using Hashset");
                 Console.WriteLine("6. Abstract With Interfaces");
+                Console.WriteLine("7. Delegates");
 
                 Console.WriteLine("\nEnter Choice");
                 string x = Console.ReadLine();
@@ -43,6 +44,10 @@ namespace CSharpConcepts
                     case 6:
                         AbstractWithInterface a = new AbstractWithInterface();
                         a.start();
+                        break;
+                    case 7:
+                        DelegateClass d = new DelegateClass();
+                        d.start();
                         break;
                     default:
                         break;
