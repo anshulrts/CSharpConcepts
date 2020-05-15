@@ -16,6 +16,7 @@ namespace CSharpConcepts
                 Console.WriteLine("5. Using Hashset");
                 Console.WriteLine("6. Abstract With Interfaces");
                 Console.WriteLine("7. Delegates");
+                Console.WriteLine("8. Events");
 
                 Console.WriteLine("\nEnter Choice");
                 string x = Console.ReadLine();
@@ -48,6 +49,10 @@ namespace CSharpConcepts
                     case 7:
                         DelegateClass d = new DelegateClass();
                         d.start();
+                        break;
+                    case 8:
+                        EventClass e = new EventClass();
+                        e.start();
                         break;
                     default:
                         break;
