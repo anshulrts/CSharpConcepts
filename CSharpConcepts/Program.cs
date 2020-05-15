@@ -39,6 +39,10 @@ namespace CSharpConcepts
                         UsingHashSet u = new UsingHashSet();
                         u.start();
                         break;
+                    case 6:
+                        AbstractWithInterface a = new AbstractWithInterface();
+                        a.start();
+                        break;
                     default:
                         break;
                 }
