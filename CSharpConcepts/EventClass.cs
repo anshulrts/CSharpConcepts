@@ -9,6 +9,7 @@ namespace CSharpConcepts
     {
         public void start()
         {
+
             Photo photo = new Photo("Abc");
             PhotoEditor photoEditor = new PhotoEditor();
 
@@ -61,4 +62,16 @@ namespace CSharpConcepts
 
         public string Name { get; set; }
     }
+
+    public interface ICustomer
+    {
+        delegate void abc();
+    }
+
+    public class Customer : ICustomer
+    {
+        public const int x = 3;
+    }
+
+
 }

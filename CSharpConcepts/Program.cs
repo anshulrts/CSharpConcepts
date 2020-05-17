@@ -17,6 +17,7 @@ namespace CSharpConcepts
                 Console.WriteLine("6. Abstract With Interfaces");
                 Console.WriteLine("7. Delegates");
                 Console.WriteLine("8. Events");
+                Console.WriteLine("9. Static Constructor");
 
                 Console.WriteLine("\nEnter Choice");
                 string x = Console.ReadLine();
@@ -53,6 +54,10 @@ namespace CSharpConcepts
                     case 8:
                         EventClass e = new EventClass();
                         e.start();
+                        break;
+                    case 9:
+                        TestStatic ts = new TestStatic();
+                        ts.start();
                         break;
                     default:
                         break;
