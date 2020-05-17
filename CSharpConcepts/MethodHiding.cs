@@ -11,15 +11,15 @@ namespace CSharpConcepts
             Parent p = new Parent();
             Son s = new Son();
 
-            p.display();
-            s.display();
+            p.display(); // In Parent. x = 10
+            s.display(); // In Son. x = 20
 
-            p.Show();
-            s.Show();
+            p.Show(); // Show In Parent.x = 10
+            s.Show(); // Show In Son.x = 20
 
             Parent p1 = new Son();
-            p1.display();
-            p1.Show();
+            p1.display(); // In Parent. x = 10
+            p1.Show(); // Show In Parent.x = 10
         }
     }
 
