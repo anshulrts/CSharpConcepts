@@ -18,6 +18,7 @@ namespace CSharpConcepts
                 Console.WriteLine("7. Delegates");
                 Console.WriteLine("8. Events");
                 Console.WriteLine("9. Static Constructor");
+                Console.WriteLine("10. AsyncAwait");
 
                 Console.WriteLine("\nEnter Choice");
                 string x = Console.ReadLine();
@@ -58,6 +59,10 @@ namespace CSharpConcepts
                     case 9:
                         TestStatic ts = new TestStatic();
                         ts.start();
+                        break;
+                    case 10:
+                        AsyncAwait aw = new AsyncAwait();
+                        aw.start();
                         break;
                     default:
                         break;
