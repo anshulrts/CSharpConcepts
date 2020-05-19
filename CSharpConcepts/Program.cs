@@ -1,4 +1,5 @@
 ﻿using System;
+using CSharpConcepts.UsingIComparernamespace;
 
 namespace CSharpConcepts
 {
@@ -21,6 +22,7 @@ namespace CSharpConcepts
                 Console.WriteLine("10. AsyncAwait");
                 Console.WriteLine("11. Yield Keyword");
                 Console.WriteLine("12. Using IComparable");
+                Console.WriteLine("13. Using IComparer");
 
                 Console.WriteLine("\nEnter Choice");
                 string x = Console.ReadLine();
@@ -73,6 +75,10 @@ namespace CSharpConcepts
                     case 12:
                         UsingIComparable uic = new UsingIComparable();
                         uic.start();
+                        break;
+                    case 13:
+                        UsingIComparer uico = new UsingIComparer();
+                        uico.start();
                         break;
                     default:
                         break;
