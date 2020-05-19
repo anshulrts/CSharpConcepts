@@ -1,5 +1,6 @@
 ﻿using System;
 using CSharpConcepts.UsingIComparernamespace;
+using CSharpConcepts.UsingIEquatableNamespace;
 
 namespace CSharpConcepts
 {
@@ -24,6 +25,7 @@ namespace CSharpConcepts
                 Console.WriteLine("12. Using IComparable");
                 Console.WriteLine("13. Using IComparer");
                 Console.WriteLine("14. Equality Scenarios");
+                Console.WriteLine("15. UsingIEquatable");
 
                 Console.WriteLine("\nEnter Choice");
                 string x = Console.ReadLine();
@@ -84,6 +86,10 @@ namespace CSharpConcepts
                     case 14:
                         EqualityScenario eq = new EqualityScenario();
                         eq.start();
+                        break;
+                    case 15:
+                        UsingIEquatable ui = new UsingIEquatable();
+                        ui.start();
                         break;
                     default:
                         break;
