@@ -23,6 +23,7 @@ namespace CSharpConcepts
                 Console.WriteLine("11. Yield Keyword");
                 Console.WriteLine("12. Using IComparable");
                 Console.WriteLine("13. Using IComparer");
+                Console.WriteLine("14. Equality Scenarios");
 
                 Console.WriteLine("\nEnter Choice");
                 string x = Console.ReadLine();
@@ -79,6 +80,10 @@ namespace CSharpConcepts
                     case 13:
                         UsingIComparer uico = new UsingIComparer();
                         uico.start();
+                        break;
+                    case 14:
+                        EqualityScenario eq = new EqualityScenario();
+                        eq.start();
                         break;
                     default:
                         break;
