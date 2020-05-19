@@ -20,6 +20,7 @@ namespace CSharpConcepts
                 Console.WriteLine("9. Static Constructor");
                 Console.WriteLine("10. AsyncAwait");
                 Console.WriteLine("11. Yield Keyword");
+                Console.WriteLine("12. Using IComparable");
 
                 Console.WriteLine("\nEnter Choice");
                 string x = Console.ReadLine();
@@ -68,6 +69,10 @@ namespace CSharpConcepts
                     case 11:
                         YieldKeyword yk = new YieldKeyword();
                         yk.start();
+                        break;
+                    case 12:
+                        UsingIComparable uic = new UsingIComparable();
+                        uic.start();
                         break;
                     default:
                         break;
