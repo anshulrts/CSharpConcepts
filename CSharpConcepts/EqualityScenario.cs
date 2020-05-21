@@ -42,9 +42,12 @@ namespace CSharpConcepts
             string s1 = "Hello";
             string s2 = "Hello";
 
+            // String Interning is concept where every unique string is stored at same location in C#
+            // Above, both s1 and s2 are at same location in the heap.
+            // Also, string will always always always do value comparison
             Console.WriteLine(s1 == s2); // True -> Value Comparison
             Console.WriteLine(s1.Equals(s2)); // True -> Value Comparison
-            Console.WriteLine(object.ReferenceEquals(s1, s2)); // True -> Value Comparison
+            Console.WriteLine(object.ReferenceEquals(s1, s2)); // True -> Reference Comparison
 
             string s3 = "Hello World";
             StringBuilder s4 = new StringBuilder("Hello World");
@@ -57,6 +60,27 @@ namespace CSharpConcepts
             string s6 = "Hello";
             Console.WriteLine(s5.Equals((object)s6)); // True
 
+            string s7 = "Hello";
+            string s8 = s7 + " World";
+            string s9 = "Hello World";
+
+            Console.WriteLine(s8 == s9); // True
+            Console.WriteLine(s8.Equals(s9)); // True
+            Console.WriteLine(object.ReferenceEquals(s8, s9)); // False
+
+            string s10 = "Questions";
+            string s11 = new string("Questions".ToCharArray());
+
+            Console.WriteLine(s10 == s11); // True -> Value Comparison
+            Console.WriteLine(s10.Equals(s11)); // True -> Value Comparison
+            Console.WriteLine(object.ReferenceEquals(s10, s11)); // False -> Reference Comparison
+
+            object s12 = "Questions";
+            object s13 = new string("Questions".ToCharArray());
+
+            Console.WriteLine(s12 == s13); // False -> Reference Comparison
+            Console.WriteLine(s12.Equals(s13)); // True -> Value Comparison
+            Console.WriteLine(object.ReferenceEquals(s12, s13)); // False -> Reference Comparison
         }
 
         public class Vehicle
