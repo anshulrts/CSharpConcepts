@@ -10,13 +10,33 @@ namespace CSharpConcepts
     {
         public async void start()
         {
-            CallAsync();
+            await CallAsync();
             Console.WriteLine("Inside Start Method");
         }
 
         public async Task CallAsync()
         {
-            Task t = new Task(() =>
+            //Task t = new Task(() =>
+            //{
+            //    for (int i = 0; i < 10; i++)
+            //    {
+            //        Thread.Sleep(2000);
+            //        Console.WriteLine("Inside Task For Loop {0}", i);
+            //    }
+            //});
+
+            //Console.WriteLine("Outside For Loop");
+
+            //t.Start();
+
+            //method1();
+
+            //t.Wait();
+
+
+            // Instead of above written code with .Start() and .Wait
+            // We can use following code with object initializer and await
+            var res = Task.Run(() =>
             {
                 for (int i = 0; i < 10; i++)
                 {
@@ -27,29 +47,9 @@ namespace CSharpConcepts
 
             Console.WriteLine("Outside For Loop");
 
-            t.Start();
-
             method1();
 
-            t.Wait();
-
-
-            // Instead of above written code with .Start() and .Wait
-            // We can use following code with object initializer and await
-            //var res = Task.Run(() =>
-            //{
-            //    for (int i = 0; i<10; i++)
-            //    {
-            //        Thread.Sleep(2000);
-            //        Console.WriteLine("Inside Task For Loop {0}", i);
-            //    }
-            //});
-
-            //Console.WriteLine("Outside For Loop");
-
-            // method1();
-
-            //await res; // or res.Wait();
+            await res; // or res.Wait();
         }
 
         public void method1()
