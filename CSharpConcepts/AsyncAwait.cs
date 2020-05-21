@@ -34,8 +34,8 @@ namespace CSharpConcepts
             //t.Wait();
 
 
-            // Instead of above written code with .Start() and .Wait
-            // We can use following code with object initializer and await
+            // .Wait() is a synchronous wait whereas await is asynchronous
+            // Uncomment the above the code to understand the difference
             var res = Task.Run(() =>
             {
                 for (int i = 0; i < 10; i++)
