@@ -30,6 +30,7 @@ namespace CSharpConcepts
                 Console.WriteLine("15. UsingIEquatable");
                 Console.WriteLine("16. Shallow Copy");
                 Console.WriteLine("17. Constructors");
+                Console.WriteLine("18. Exception Handling");
 
                 Console.WriteLine("\nEnter Choice");
                 string x = Console.ReadLine();
@@ -102,6 +103,17 @@ namespace CSharpConcepts
                     case 17:
                         Constructors c = new Constructors();
                         c.start();
+                        break;
+                    case 18:
+                        try
+                        {
+                            ExceptionHandling exc = new ExceptionHandling();
+                            exc.start();
+                        }
+                        catch(Exception ex)
+                        {
+                            Console.WriteLine("Exception in Main()");
+                        }
                         break;
                     default:
                         break;
