@@ -58,7 +58,9 @@ namespace CSharpConcepts
 
             string s5 = "Hello";
             string s6 = "Hello";
+            Console.WriteLine(s5 == (object)s6); // True
             Console.WriteLine(s5.Equals((object)s6)); // True
+            Console.WriteLine(object.ReferenceEquals(s5, (object)s6)); // True
 
             string s7 = "Hello";
             string s8 = s7 + " World";
