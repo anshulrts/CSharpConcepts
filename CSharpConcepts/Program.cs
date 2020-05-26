@@ -32,6 +32,7 @@ namespace CSharpConcepts
                 Console.WriteLine("17. Constructors");
                 Console.WriteLine("18. Exception Handling");
                 Console.WriteLine("19. Try Catch Finally");
+                Console.WriteLine("20. Make a Immutable Class");
 
                 Console.WriteLine("\nEnter Choice");
                 string x = Console.ReadLine();
