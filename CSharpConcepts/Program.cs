@@ -31,6 +31,7 @@ namespace CSharpConcepts
                 Console.WriteLine("16. Shallow Copy");
                 Console.WriteLine("17. Constructors");
                 Console.WriteLine("18. Exception Handling");
+                Console.WriteLine("19. Try Catch Finally");
 
                 Console.WriteLine("\nEnter Choice");
                 string x = Console.ReadLine();
@@ -114,6 +115,11 @@ namespace CSharpConcepts
                         {
                             Console.WriteLine("Exception in Main()");
                         }
+                        break;
+                    case 19:
+                        TryCatchFinally tcf = new TryCatchFinally();
+                        int abc = tcf.start();
+                        Console.WriteLine(abc);
                         break;
                     default:
                         break;
