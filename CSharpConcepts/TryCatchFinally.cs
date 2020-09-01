@@ -23,8 +23,8 @@ namespace CSharpConcepts
             }
             finally
             {
-                // Compile Time Error
-                // Control cannot leave the body of finally clause
+                //Compile Time Error
+                //Control cannot leave the body of finally clause
                 //return 3;
             }
         }

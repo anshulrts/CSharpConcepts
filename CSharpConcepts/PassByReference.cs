@@ -19,8 +19,8 @@ namespace CSharpConcepts
             // If you have to pass by reference, you need to use ref keyword explicitly
             modify(p1, p2);
 
-            Console.WriteLine(p1.Name);
-            Console.WriteLine(p2.Name);
+            Console.WriteLine(p1.Name); //Outer 1
+            Console.WriteLine(p2.Name); //Inner 2
         }
 
         void modify(Product p1, Product p2)

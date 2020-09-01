@@ -11,18 +11,18 @@ namespace CSharpConcepts
             Parent p = new Parent();
             Son s = new Son();
 
-            p.Display();
-            p.Test();
-            p.Show();
+            p.Display(); //Display In Parent.x = 10
+            p.Test();    //Test In Parent.x = 10
+            p.Show();    //Show In Parent. x = 10
 
-            s.Display();
-            s.Test();
-            s.Show();
+            s.Display(); //Display In Parent.x = 10
+            s.Test();    //Test In Parent.x = 10
+            s.Show();    //Show In Son. x = 20
 
             Parent p1 = new Son();
-            p1.Display();
-            p1.Test();
-            p1.Show();
+            p1.Display(); //Display In Parent.x = 10
+            p1.Test();    //Test In Parent.x = 10
+            p1.Show();    //Show In Son. x = 20
         }
 
         class Parent
