@@ -33,6 +33,7 @@ namespace CSharpConcepts
                 Console.WriteLine("18. Exception Handling");
                 Console.WriteLine("19. Try Catch Finally");
                 Console.WriteLine("20. Constructor Chaining");
+                Console.WriteLine("21. ValueTypeVsReference");
 
                 Console.WriteLine("\nEnter Choice");
                 string x = Console.ReadLine();
@@ -125,6 +126,10 @@ namespace CSharpConcepts
                     case 20:
                         ConstructorChaining constructorChaining = new ConstructorChaining();
                         constructorChaining.start();
+                        break;
+                    case 21:
+                        ValueTypeVsRef vtr = new ValueTypeVsRef();
+                        vtr.start();
                         break;
                     default:
                         break;
