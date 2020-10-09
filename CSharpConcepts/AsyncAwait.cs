@@ -10,11 +10,11 @@ namespace CSharpConcepts
     {
         public async void start()
         {
-            await CallAsync();
-            Console.WriteLine("Inside Start Method");
+            int result = await CallAsync();
+            Console.WriteLine("Inside Start Method, {0}", result);
         }
 
-        public async Task CallAsync()
+        public async Task<int> CallAsync()
         {
             //Task t = new Task(() =>
             //{
@@ -50,6 +50,7 @@ namespace CSharpConcepts
             method1();
 
             await res; // or res.Wait();
+            return 1;
         }
 
         public void method1()
