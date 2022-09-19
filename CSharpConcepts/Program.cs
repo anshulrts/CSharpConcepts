@@ -34,6 +34,7 @@ namespace CSharpConcepts
                 Console.WriteLine("19. Try Catch Finally");
                 Console.WriteLine("20. Constructor Chaining");
                 Console.WriteLine("21. ValueTypeVsReference");
+                Console.WriteLine("22. ValueTypeVsReference");
 
                 Console.WriteLine("\nEnter Choice");
                 string x = Console.ReadLine();
@@ -122,6 +123,7 @@ namespace CSharpConcepts
                     case 19:
                         TryCatchFinally tcf = new TryCatchFinally();
                         int abc = tcf.start();
+                        // Prints 2
                         Console.WriteLine(abc);
                         break;
                     case 20:
@@ -131,6 +133,10 @@ namespace CSharpConcepts
                     case 21:
                         ValueTypeVsRef vtr = new ValueTypeVsRef();
                         vtr.start();
+                        break;
+                    case 22:
+                        ReferenceComparisonByDifferentInsert rb = new ReferenceComparisonByDifferentInsert();
+                        rb.start();
                         break;
                     default:
                         break;
