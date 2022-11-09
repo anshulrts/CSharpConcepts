@@ -24,7 +24,7 @@ namespace CSharpConcepts
             finally
             {
                 //Compile Time Error
-                //Control cannot leave the body of finally clause
+                //Control cannot leave the body of finally clause, so cannot have a return statement in finally block
                 //return 3;
             }
         }

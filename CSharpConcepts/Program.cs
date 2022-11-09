@@ -35,6 +35,7 @@ namespace CSharpConcepts
                 Console.WriteLine("20. Constructor Chaining");
                 Console.WriteLine("21. ValueTypeVsReference");
                 Console.WriteLine("22. ValueTypeVsReference");
+                Console.WriteLine("23. AbstractClass");
 
                 Console.WriteLine("\nEnter Choice");
                 string x = Console.ReadLine();
@@ -137,6 +138,10 @@ namespace CSharpConcepts
                     case 22:
                         ReferenceComparisonByDifferentInsert rb = new ReferenceComparisonByDifferentInsert();
                         rb.start();
+                        break;
+                    case 23:
+                        AbstractClass ac = new AbstractClass();
+                        ac.start();
                         break;
                     default:
                         break;
