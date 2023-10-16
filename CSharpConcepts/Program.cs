@@ -36,6 +36,7 @@ namespace CSharpConcepts
                 Console.WriteLine("21. ValueTypeVsReference");
                 Console.WriteLine("22. ValueTypeVsReference");
                 Console.WriteLine("23. AbstractClass");
+                Console.WriteLine("24. Custom Exception");
 
                 Console.WriteLine("\nEnter Choice");
                 string x = Console.ReadLine();
@@ -142,6 +143,10 @@ namespace CSharpConcepts
                     case 23:
                         AbstractClass ac = new AbstractClass();
                         ac.start();
+                        break;
+                    case 24:
+                        CustomException cs = new CustomException();
+                        cs.start();
                         break;
                     default:
                         break;

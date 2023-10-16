@@ -8,7 +8,7 @@ namespace CSharpConcepts
     {
         public void start()
         {
-
+            IEnumerable<string> strings = new List<string>();
         }
 
         public abstract class Animal
