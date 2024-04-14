@@ -37,6 +37,7 @@ namespace CSharpConcepts
         public abstract decimal CalculateBonus(decimal salary);
 
         public abstract decimal GetMinimumSalary();
+
     }
 
     public class PermanentEmployee : Employee
