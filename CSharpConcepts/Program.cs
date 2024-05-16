@@ -34,7 +34,7 @@ namespace CSharpConcepts
                 Console.WriteLine("19. Try Catch Finally");
                 Console.WriteLine("20. Constructor Chaining");
                 Console.WriteLine("21. ValueTypeVsReference");
-                Console.WriteLine("22. ValueTypeVsReference");
+                Console.WriteLine("22. Reference Comparison By Different Insert");
                 Console.WriteLine("23. AbstractClass");
                 Console.WriteLine("24. Custom Exception");
                 Console.WriteLine("24. Finally Not Executed");
