@@ -37,6 +37,7 @@ namespace CSharpConcepts
                 Console.WriteLine("22. ValueTypeVsReference");
                 Console.WriteLine("23. AbstractClass");
                 Console.WriteLine("24. Custom Exception");
+                Console.WriteLine("24. Finally Not Executed");
 
                 Console.WriteLine("\nEnter Choice");
                 string x = Console.ReadLine();
