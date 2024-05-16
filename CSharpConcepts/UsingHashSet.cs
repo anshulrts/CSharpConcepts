@@ -15,7 +15,7 @@ namespace CSharpConcepts
             hInt.Add(3);
             hInt.Add(3);
 
-            Console.WriteLine(hInt.Count);
+            Console.WriteLine(hInt.Count); //3
 
             HashSet<Employee> hEmp = new HashSet<Employee>();
             hEmp.Add(new Employee { Name = "A"});
@@ -23,7 +23,7 @@ namespace CSharpConcepts
             hEmp.Add(new Employee { Name = "C" });
             hEmp.Add(new Employee { Name = "C" });
 
-            Console.WriteLine(hEmp.Count);
+            Console.WriteLine(hEmp.Count); //4
         }
 
         class Employee

@@ -148,6 +148,10 @@ namespace CSharpConcepts
                         CustomException cs = new CustomException();
                         cs.start();
                         break;
+                    case 25:
+                        FinallyNotExecuted fne = new FinallyNotExecuted();
+                        fne.start();
+                        break;
                     default:
                         break;
                 }

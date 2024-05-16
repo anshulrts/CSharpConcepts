@@ -27,7 +27,7 @@ namespace CSharpConcepts
 
         class Parent
         {
-            int x = 10;
+            private int x = 10;
 
 
             // Display is defined in Parent But Not in Son
