@@ -37,7 +37,7 @@ namespace CSharpConcepts
                 Console.WriteLine("22. Reference Comparison By Different Insert");
                 Console.WriteLine("23. AbstractClass");
                 Console.WriteLine("24. Custom Exception");
-                Console.WriteLine("24. Finally Not Executed");
+                Console.WriteLine("25. Finally Not Executed");
 
                 Console.WriteLine("\nEnter Choice");
                 string x = Console.ReadLine();
